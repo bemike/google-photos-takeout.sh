@@ -1,6 +1,6 @@
 # A script that — just works!
 
-This is a fork from [Zaczero Kamil Monicz](https://github.com/Zaczero/google-photos-takeout.sh). The only thing I do is that I adjusted the script to make it works on macOS.
+This is a fork from [Zaczero Kamil Monicz](https://github.com/Zaczero/google-photos-takeout.sh). The only thing I do is that I adjusted the script to make it work on macOS.
 
 This script fixes the image and video metadata of Google Photos Takeout, so that it can be used with other software. It handles both the DateTimeOriginal and GPS EXIF fields.
 
