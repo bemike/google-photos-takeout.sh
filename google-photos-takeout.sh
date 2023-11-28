@@ -65,7 +65,7 @@ for i in "${!files[@]}"; do
     fi
 
     # set modification time from unix timestamp
-    touch -m -t "$(date -d @"$timestamp" +%Y%m%d%H%M.%S)" "$fullpath"
+    touch -m -t "$(date -r "$timestamp" +%Y%m%d%H%M.%S)" "$fullpath"
 
     # append to fullpaths file
     echo "$fullpath" >> "$fullpaths"
@@ -116,6 +116,7 @@ printf "\n"
 
 if [[ $REPLY =~ ^[Yy]$ ]]; then
   for file in "${files[@]}"; do
-    rm --verbose "$file"
+    echo "Removing $file"
+    rm "$file"
   done
 fi
